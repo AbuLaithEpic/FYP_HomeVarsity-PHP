@@ -1,0 +1,25 @@
+.list-item{
+    background-color: #E2DFDF;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.row{
+    margin: 50px;
+}
+.card-alamat{
+    font-weight: bold;
+    color: black;
+}
+.card-contact{
+    color: black;
+}
+.card-jenis, .card-jarak, .card-bilangan, .card-body{
+    color: rgb(149, 149, 149);
+    background-color: #FFFAF1;
+    /* -webkit-text-stroke: 0.5px rgb(149, 149, 149) */
+}
+
+img{
+    height: 200px;
+    width: 100%;
+}

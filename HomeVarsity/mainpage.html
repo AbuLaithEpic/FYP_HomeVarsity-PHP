@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mainpage.css" />
+    <title>HomeVarsity - Main Page</title>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="nav-wrapper">
+        <div class="logo">
+          <a href="mainpage.html">
+            <img src="./images/logo.png" />
+          </a>
+        </div>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#rent">Rent House</a>
+          <a href="#find">Find House</a>
+          <a href="#about">About Us</a>
+          <a href="#hotlink">Hotlink</a>
+          <a id="switch" href="./signinpage.php">Switch to hosting</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div id="home">
+      <div class="content">
+        <h1>WELCOME TO UUM HOMEVARSITY</h1>
+        <h2>
+          UUM HomeVarsity is a system developed for owners / agents who want to
+          rent a house to UUM students
+        </h2>
+      </div>
+    </div>
+
+    <div id="rent">
+      <div class="wrapper">
+        <div class="box">
+          <img src="./images/rent1.jpg" alt="" />
+          <h2>Rent one or more houses</h2>
+          <a href="GUIDEBOOK.pdf" target="_blank" id="info">Read more</a>
+          <br>
+          <a href="./register-house-0.php" id="select"> Select</a>
+        </div>
+        <div class="box">
+          <img src="./images/rent2.jpg" alt="" />
+          <h2>Rent one or more rooms</h2>
+          <a href="GUIDEBOOK.pdf" target="_blank" id="info">Read more</a>
+          <br>
+          <a href="#!" id="select"> Select</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="find">
+      <a href="./listing.php"> View all</a>
+      <div class="container-find">
+        <div class="cards">
+          <div class="image-section img-one" onclick="togglePopup()"></div>
+          <div class="content-find">
+            <h2 class="nama">No12 Taman Cahaya</h2>
+            <h3 class="jenis">Terrace House</h3>
+            <h3 class="area">7 <span style="color: #0e0ed2;">Km from UUM</span></h3>
+            <h3 class="jarak">1 <span style="color: #0e0ed2;">available</span></h3>
+            <h3 class="harga">RM 1250 <span style="color: #0e0ed2;">per month</span></h3>
+            <h3 class="bilangan"><span style="color: #0e0ed2;">Phone Number :</span> 012-3456789</h3>
+            <h3><span style="color: #0e0ed2;">WhatsApp Link :</span> <a href="https://api.whatsapp.com/send?phone=60123456789" target="_blank">https://wa.me/012-3456789</a></h3>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="image-section img-two" onclick="togglePopup()"></div>
+          <div class="content-find">
+            <h2 class="nama">No23 Taman Bunga Raya</h2>
+            <h3 class="jenis">Single House</h3>
+            <h3 class="area">5 <span style="color: #0e0ed2;">Km from UUM</span></h3>
+            <h3 class="jarak">1 <span style="color: #0e0ed2;">available</span></h3>
+            <h3 class="harga">RM 1300 <span style="color: #0e0ed2;">per month</span></h3>
+            <h3 class="bilangan"><span style="color: #0e0ed2;">Phone Number :</span> 012-3456789</h3>
+            <h3><span style="color: #0e0ed2;">WhatsApp Link :</span> <a href="https://api.whatsapp.com/send?phone=60123456789" target="_blank">https://wa.me/012-3456789</a></h3>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="image-section img-three" onclick="togglePopup()"></div>
+          <div class="content-find">
+            <h2 class="nama">No38 Taman Jaya</h2>
+            <h3 class="jenis">Terrace House</h3>
+            <h3 class="area">8.3 <span style="color: #0e0ed2;">Km from UUM</span></h3>
+            <h3 class="jarak">2 <span style="color: #0e0ed2;">available</span></h3>
+            <h3 class="harga">RM 1300 <span style="color: #0e0ed2;">per month</span></h3>
+            <h3 class="bilangan"><span style="color: #0e0ed2;">Phone Number :</span> 012-3456789</h3>
+            <h3><span style="color: #0e0ed2;">WhatsApp Link :</span> <a href="https://api.whatsapp.com/send?phone=60123456789" target="_blank">https://wa.me/012-3456789</a></h3>
+          </div>
+        </div>
+        <!-- div for pictures slide -->
+        <div class="popup" id="popup-1">
+          <div class="overlay"></div>
+          <div class="content-popup">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Pictures</h1>
+            <div class="container">
+              <div class="slideshow">
+                <div id="slide-1" class="slide">
+                  <a href="#slide-4"></a>
+                  <a href="#slide-2"></a>
+                  <img
+                    src="./images/find_1.jpg"
+                  />
+                </div>
+                <div id="slide-2" class="slide">
+                  <a href="#slide-1"></a>
+                  <a href="#slide-3"></a>
+                  <img
+                    src="./images/perabot1.jpg"
+                  />
+                </div>
+                <div id="slide-3" class="slide">
+                  <a href="#slide-2"></a>
+                  <a href="#slide-4"></a>
+                  <img
+                    src="./images/perabot2.jpg"
+                  />
+                </div>
+                <div id="slide-4" class="slide">
+                  <a href="#slide-3"></a>
+                  <a href="#slide-1"></a>
+                  <img
+                    src="./images/perabot3.jpg"
+                  />
+                </div>
+              </div>
+              <div class="pagination">
+                <a href="#slide-1"><span>1</span></a>
+                <a href="#slide-2"><span>2</span></a>
+                <a href="#slide-3"><span>3</span></a>
+                <a href="#slide-4"><span>4</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="content">
+        <h1>ABOUT US</h1>
+        <h2>
+          The objective of this website is to provide house owners/agents a
+          system where they can rent their house to UUM students.
+        </h2>
+        <h2>
+          This website also allow students to search available house/rooms
+          around UUM area for rent such as Changlun and Jitra area.
+        </h2>
+      </div>
+    </div>
+
+    <div id="hotlink">
+      <div class="content"><h1>Hotlink</h1></div>
+      <div class="container-hotlink">
+        <div id="div1">
+          <p id="uum">
+            STUDENT ACCOMMODATION CENTRE <br />
+            Student Affairs Department <br />
+            Universiti Utara Malaysia
+          </p>
+          <p id="alamat">
+            06010 Sintok <br />
+            Kedah Darul Aman, Malaysia
+          </p>
+          <ul>
+            <li>+604-928 4150</li>
+            <li>+604-928 4175</li>
+            <li>sac@uum.edu.my</li>
+          </ul>
+        </div>
+        <div id="div2">
+          <div class="social-img">
+            <a
+              id="facebook"
+              href="https://www.facebook.com/universitiutaramalaysia/"
+              target="_blank"
+            >
+              <div class="image-section facebook"></div>
+              <div class="text-section"><h2>Facebook</h2></div>
+            </a>
+            <a
+              id="instagram"
+              href="https://www.instagram.com/uumofficial/"
+              target="_blank"
+            >
+              <div class="image-section instagram"></div>
+              <div class="text-section"><h2>Instagram</h2></div>
+            </a>
+            <a id="twitter" href="https://twitter.com/uumnews" target="_blank">
+              <div class="image-section twitter"></div>
+              <div class="text-section"><h2>Twitter</h2></div>
+            </a>
+          </div>
+        </div>
+        <div id="div3">
+          <div class="social-img">
+            <a
+              id="youtube"
+              href="https://www.youtube.com/user/uumtube"
+              target="_blank"
+            >
+              <div class="image-section youtube"></div>
+              <div class="text-section"><h2>Youtube</h2></div>
+            </a>
+            <a id="telegram" href="https://t.me/uuminfo" target="_blank">
+              <div class="image-section telegram"></div>
+              <div class="text-section"><h2>Telegram</h2></div>
+            </a>
+            <a
+              id="linkedin"
+              href="https://www.linkedin.com/school/universiti-utara-malaysia/"
+              target="_blank"
+            >
+              <div class="image-section linkedin"></div>
+              <div class="text-section"><h2>Linkedin</h2></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+      <div class="content">
+        Copy Rights &copy; 2022 | UUM HomeVarsity Website
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function togglePopup() {
+    document.getElementById("popup-1").classList.toggle("active");
+  }
+</script>
+
+<style>
+  .popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vw;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+  }
+
+  .popup .content-popup {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 1000px;
+    height: 800px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .popup.active .overlay {
+    display: block;
+  }
+
+  .popup.popup.active .content-popup {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  h1 {
+    text-align: center;
+  }
+  h1,
+  aside,
+  .container {
+    margin: 0 auto 20px;
+    max-width: 900px;
+  
+  }
+  .container {
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    transition: box-shadow 200ms;
+  }
+  .container:hover {
+    box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.25);
+  }
+  .slideshow {
+    position: relative;
+    width: 100%;
+  }
+  .slideshow:after {
+    content: "";
+    display: block;
+    padding-bottom: calc((100% / 6) * 4);
+  }
+  .slideshow:hover a {
+    opacity: 1;
+  }
+  .slideshow a {
+    opacity: 0;
+    position: relative;
+    text-decoration: none;
+    transition: opacity 0.5s;
+  }
+  .slideshow a:after {
+    border-color: #fff #fff transparent transparent;
+    border-style: solid;
+    border-width: 2px;
+    color: #fff;
+    display: block;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 5px);
+    width: 10px;
+  }
+  .slideshow a:first-child:after {
+    content: "";
+    left: 10px;
+    transform: rotate(-135deg);
+  }
+  .slideshow a:nth-child(2):after {
+    content: "";
+    right: 10px;
+    transform: rotate(45deg);
+  }
+  .slideshow .slide {
+    background-color: #fff;
+    box-sizing: border-box;
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  .slideshow .slide:first-child,
+  .slideshow .slide:target {
+    display: block;
+  }
+  .slideshow .slide a {
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 50%;
+  }
+  .slideshow .slide a:nth-child(2) {
+    left: 50%;
+  }
+  .slideshow .slide img {
+    border-radius: 5px;
+    width: 100%;
+  }
+  .pagination {
+    display: flex;
+    bottom: 10px;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+  }
+  .pagination a {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    display: block;
+    height: 10px;
+    width: 10px;
+  }
+  .pagination a:not(:last-child) {
+    margin-right: 5px;
+  }
+  .pagination a span {
+    display: none;
+  }
+  a:target {
+    color: red;
+  }
+</style>

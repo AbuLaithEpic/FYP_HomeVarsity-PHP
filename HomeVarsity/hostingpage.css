@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: rgb(0 100 0 / 0.1) !important; */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar */
+.nav-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+header {
+  height: 100px;
+  background-color: #b5b4b4;
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+nav {
+  text-align: right;
+  justify-content: space-between;
+  line-height: 100px;
+}
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 10px;
+  color: black;
+}
+.logo {
+  float: left;
+}
+.logo img {
+  margin-top: 3px;
+  height: 96px;
+  width: 338px;
+}
+#switch {
+  border-radius: 30px;
+  font-size: 17px;
+  background-color: white;
+  padding: 15px 30px;
+}
+/* dummy div */
+#dummy-div {
+  height: 100px;
+  background-color: pink;
+}
+/* Listing section */
+.listing-section {
+  background-color: whitesmoke;
+  height: 600px;
+}
+
+/* lISTING TABLE */
+table {
+  width: 100%;
+}
+
+table,
+td,
+th {
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+  text-align: center;
+}
+td {
+  font-size: 18px;
+}
+th {
+  background-color: #2076d1;
+  color: white;
+}
+tr{
+  background-color: #ededed;
+}
+
+tr:hover {
+  background-color: lightgray;
+}
+
+/* Operation add new */
+.add-new{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.add-new a{
+  width: 200px;
+}
+/* Contact Section */
+#hotlink{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #e2dfdf;
+}
+#hotlink h1{
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+}
+#hotlink #uum{
+  font-size: 42px;
+  color: white;
+  font-weight: bold;
+}
+#hotlink #alamat{
+  font-size: 20px;
+  color: white;
+  letter-spacing: 4px;
+}
+#hotlink ul{
+  list-style-type: none;
+}
+#hotlink li{
+  color: white;
+}
+.container-hotlink{
+  background-color: #343D47;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 50px;
+}
+.social-img a{
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+  color: white;
+  padding: 5px;
+  margin-bottom: 30px;
+  border: 3px solid white;
+  justify-content: center;
+  border-radius: 15px;
+}
+.text-section h2{
+  margin-top: 9px;
+}
+.social-img #facebook{
+  background-color: #014EA9;
+}
+.facebook{
+  margin-left: 35px;
+  background-image: url(./images/facebook.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  background-color: #014EA9;
+}
+.social-img #instagram{
+  background-color: #D433BC;
+}
+.instagram{
+  margin-left: 35px;
+  background-image: url(./images/instagram.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  background-color: #D433BC;
+}
+.social-img #twitter{
+  background-color: #01B1F4;
+}
+.twitter{
+  margin-left: 35px;
+  background-image: url(./images/twitter.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  background-color: #01B1F4;
+}
+.social-img #linkedin{
+  background-color: #046EC5;
+}
+.linkedin{
+  margin-left: 35px;
+  background-image: url(./images/linkedin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  background-color: #046EC5;
+}
+.social-img #youtube{
+  background-color: #FF2A22;
+}
+.youtube{
+  margin-left: 35px;
+  background-image: url(./images/youtube.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  background-color: #FF2A22;
+}
+.social-img #telegram{
+  background-color: #0181FF;
+}
+.telegram{
+  margin-left: 35px;
+  background-image: url(./images/telegram.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  background-color: #0181FF;
+}
